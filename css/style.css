@@ -677,6 +677,7 @@ body {
         content: "";
         position: absolute;
         width: 200%;
+        overflow-x: hidden;
         height: 160%;
         top: -5%;
         left: -50%;
