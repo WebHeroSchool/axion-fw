@@ -670,14 +670,14 @@ body {
     .promo-video {
         position: relative;
         width: 100vw;
-        margin-left: calc(-50vw + 50%);        
+        margin-left: calc(-50vw + 50%); 
+        overflow-x: hidden;
     }
 
     .promo-video:before {
         content: "";
         position: absolute;
-        width: 200%;
-        overflow-x: hidden;
+        width: 200%;        
         height: 160%;
         top: -5%;
         left: -50%;
