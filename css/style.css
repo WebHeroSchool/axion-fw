@@ -385,6 +385,115 @@ body {
     margin-left: 9px;
 }
 
+/* Step-4 */
+
+.stories__title {
+    font-family: 'GothamProBold';
+    font-size: 22px;
+    line-height: 21px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    padding-top: 77px;
+    margin: 0 0 45px 0;
+}
+
+.stories-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stories__story {
+    display: flex;
+    flex-direction: column;
+    width: 307px;
+}
+
+.stories__story-picture {
+    width: 307px;
+    height: 147px;
+    margin-bottom: 30px;
+}
+
+.stories__story-picture-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.stories__story-title {
+    font-family: 'GothamProBold';
+    font-size: 18px;
+    line-height: 17px;
+    margin: 0 0 11px 0;
+}
+
+.stories__story-text {
+    font-family: 'GothamProRegular';
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0 0 4px 0;
+}
+
+.stories__story-bottom-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stories__story-link {    
+    font-family: 'GothamProBold';
+    font-size: 12px;
+    line-height: 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;    
+}
+
+.stories__story-link::after {
+    content: url("../img/b-right-arrow.svg");
+    margin-left: 8px;    
+}
+
+.stories__story-date {
+    font-family: 'GothamProBold';
+    font-size: 12px;
+    line-height: 11px;
+    color: black;
+    opacity: 0.3;    
+}
+
+.photo__title {
+    font-family: 'GothamProBold';
+    font-size: 18px;
+    line-height: 17px;
+    text-align: right;
+    text-transform: uppercase;
+    color: black;
+    opacity: 0.3;
+}
+
+.photo-row {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;        
+}
+
+.photo__picture {        
+    width: 147px;
+    height: 147px;    
+    margin: 0;
+    padding: 0;    
+}
+
+.photo__picture-img {
+    width: 100%;
+    height: auto;  
+    margin: 0;
+    padding: 0;       
+}
+
 @media (max-width: 1169px) {
     .container {
         max-width: 930px;        
