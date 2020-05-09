@@ -5,8 +5,8 @@ body {
 }
 
 .container {
-    max-width: 1030px;
-    margin: auto;
+    width: 1030px;
+    margin: 0 auto;
 }
 
 .header__wrapper {
@@ -417,8 +417,8 @@ body {
 
 .stories__story-picture-img {
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
 }
 
 .stories__story-title {
@@ -463,6 +463,10 @@ body {
     opacity: 0.3;    
 }
 
+.photo {
+    margin-bottom: 80px;
+}
+
 .photo__title {
     font-family: 'GothamProBold';
     font-size: 18px;
@@ -471,27 +475,148 @@ body {
     text-transform: uppercase;
     color: black;
     opacity: 0.3;
+    padding-top: 45px;
+    margin-bottom: 10px;
 }
 
 .photo-row {
     display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;        
+    justify-content: center;           
 }
 
 .photo__picture {        
     width: 147px;
-    height: 147px;    
-    margin: 0;
-    padding: 0;    
+    height: 147px;      
+}
+
+.photo__picture:nth-child(8) {
+    display: none;
 }
 
 .photo__picture-img {
     width: 100%;
-    height: auto;  
+    height: auto;           
+}
+
+.footer {
+    width: 100vw;
+    height: 296px;
+    background-color: black;
+    display: flex;    
+    /* flex: 0 0 auto; */
+    justify-content: center;
+    padding-top: 70px;   
+    box-sizing: border-box; 
+}
+
+.footer-row {
+    display: flex;   
+    width: 100%;    
+    justify-content: space-between;      
+    padding: 0 110px 0 123px; 
+    margin-bottom: 53px;
+    box-sizing: border-box;
+}
+
+.footer__account-menu,
+.footer__service-menu,
+.footer__miscellaneous-menu {
+    width: 200px;
+}
+
+.footer__account-menu-title,
+.footer__service-menu-title,
+.footer__miscellaneous-menu-title,
+.footer__contacts-title {
+    font-family: 'GothamProBold';
+    color: white;
+    font-size: 12px;
+    line-height: 11px;
+    margin: 0 0 7px 0;
+    padding: 0;
+}
+
+.footer__account-menu-list,
+.footer__service-menu-list,
+.footer__miscellaneous-menu-list,
+.footer__social-list {
+    list-style: none;
+    padding: 0;
     margin: 0;
-    padding: 0;       
+    
+}
+
+.footer__account-menu-link,
+.footer__service-menu-link,
+.footer__miscellaneous-menu-link,
+.footer__stock {
+    font-family: 'GothamProRegular';
+    font-size: 12px;
+    line-height: 11px;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.footer__stock {
+    margin: 0 0 12px 0;
+}
+
+.footer__button {
+    width: 137px;
+    height: 30px;
+    border: 1px solid white;
+    background-color: black;
+    font-family: 'GothamProBold';
+    color: white;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 3px;
+    margin-bottom: 34px;
+}
+
+.footer__button:focus {
+    outline: none;
+}
+
+.footer__social {
+    display: flex;
+}
+
+.footer__social-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 133px;
+}
+
+.footer__social-link {
+    color: white;    
+}
+
+.footer__social-item:nth-child(2n) {
+    font-size: 18px;
+}
+
+.footer__social-item:nth-child(3) {
+    font-size: 20px;
+}
+
+.footer__copyright {
+    font-family: 'GothamProRegular';
+    font-size: 12px;
+    line-height: 11px;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    margin: 0;
+    padding-right: 20px;
 }
 
 @media (max-width: 1169px) {
@@ -614,6 +739,37 @@ body {
 
     .promo-video__link::after {        
         margin-left: 15px;
+    }
+
+    /* Step-4 */
+
+    .stories {
+        margin-bottom: 33px;
+    }
+
+    .stories__title {        
+        padding-top: 92px;
+    }
+
+    .stories__story,
+    .stories__story-picture {
+        width: 277px;              
+    }   
+
+    .stories__story-picture-img {
+        object-fit: fill;
+    }
+
+    .stories__story-text {
+        font-family: 'GothamProRegular';
+        font-size: 13px;
+        line-height: 16px;
+        margin: 0 0 13px 0;
+    }
+
+    .footer-row {        
+        padding: 0 57px 0 72px;
+        margin-bottom: 53px;        
     }
 }
 
@@ -787,7 +943,7 @@ body {
         content: "";
         position: absolute;
         width: 200%;        
-        height: 160%;
+        height: 1574px;
         top: -5%;
         left: -50%;
         z-index: -1;
@@ -845,6 +1001,114 @@ body {
 
     .promo-video__link {
         display: none;
+    }
+
+    /* Step-4 */
+
+     .promo-video {
+         margin-bottom: 177px;
+     }
+
+     .stories {
+         margin-bottom: 70px;
+     }
+
+    .stories__title {        
+        font-size: 30px;
+        line-height: 29px;
+        color: white;
+        padding-top: 77px;
+        margin: 0 0 45px 0;
+    }
+
+    .stories__story:nth-child(3) {
+        display: none;
+    }
+
+    .stories__story {
+        width: 312px;
+    }
+
+    .stories__story-picture {
+        width: 312px;
+        height: 165px;
+    }
+
+    .stories__story-title {
+        color: white;
+        font-size: 25px;
+        line-height: 24px;
+        margin: 0 0 11px 0;
+    }
+
+    .stories__story-text {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 20px;
+        line-height: 25px;
+        margin: 0 0 22px 0;
+    }    
+
+    .stories__story-link {
+        color: white;
+        font-size: 20px;
+        line-height: 19px;        
+    }
+
+    .stories__story-link::after {
+        content: url("../img/right-arrow-2.svg");
+        margin-left: 10px;
+    }
+
+    .stories__story-date {        
+        font-size: 15px;
+        line-height: 14px;
+        color: white;
+        opacity: 0.8;
+    }
+
+    .photo {
+        margin-bottom: 122px;
+    }
+
+    .photo__title {
+        color: white;
+        opacity: 1;
+        font-size: 30px;
+        line-height: 29px;
+        margin-bottom: 15px;
+    }
+
+    .photo-row {
+        flex-wrap: wrap;
+    }
+
+    .photo__picture {
+        width: 170px;
+        height: 170px;
+    }
+
+    .photo__picture:nth-child(8) {
+        display: flex;
+    }
+
+    .footer {
+        height: 304px;
+        padding-top: 60px;
+    }
+
+    .footer-row {
+        padding: 0;
+        margin-bottom: 33px;
+    }
+
+    .footer__account-menu,
+    .footer__service-menu,
+    .footer__miscellaneous-menu {
+        width: 140px;
+    }
+
+    .footer__copyright {
+        margin-bottom: 34px;
     }
 }
 
