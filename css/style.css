@@ -1513,6 +1513,10 @@ body {
     .footer__social-link {
         font-size: 22px;
     }
+
+    .footer__copyright {
+        padding: 0;
+    }
 }
 
 @media (max-width: 767px) {
